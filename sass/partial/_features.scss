@@ -1,0 +1,29 @@
+.features {
+  .container {
+    ul {
+      font-size: 1.3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      li {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* ================== MEDIA QUERIES (SMALL SCREENS) ======================= */
+@media screen and (max-width: 600px) {
+
+  .features {
+    .container {
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+

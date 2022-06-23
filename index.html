@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beekeeping-website</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- BOXICONS CDN  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#" class="nav__logo">
+          <h3>NumericBees</h3>
+        </a>
+        <ul id="nav__items">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#buy">Acheter</a></li>
+          <li><a href="#demo">Démonstration</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+    <!-- END OF NAV -->
+
+    <section class="hero">
+      <div class="hero-bg-image">
+        <div class="hero-text">
+          <h1>NumericBees</h1>
+          <h2>L'Apiculture Simplifiée</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="left">
+            <h1>Zephyr 1</h1>
+            <h2>L'enfumoir Apicole Qui Facilite La Vie Au Rucher</h2>
+            <div class="check">
+              <i class="bx bx-check-square"></i>
+              <p>Allumage sans effort</p>
+            </div>
+            <div class="check">
+              <i class="bx bx-check-square"></i>
+              <p>Enfumage automatique</p>
+            </div>
+            <div class="buttons">
+              <a href="#knowmore" class="btn-primary">
+                <i class="bx bx-chevrons-down"></i>
+                <span>En Savoir Plus</span>
+              </a>
+              <a href="#buy" class="btn-primary">
+                <i class="bx bx-cart"></i>
+                <span>Acheter</span>
+              </a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="hero-image">
+              <img
+                src="./assets/img/zephyr-1-automatic-bee-smoker.jpg"
+                alt="Enfumoir Automatique Zephyr 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF HERO -->
+
+    <section id="knowmore" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video width="100%" autoplay muted loop>
+            <source src="./assets/video/ouverture-ruche.mp4" type="video/mp4" />
+            Your browser does not support the video.
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video width="100%" autoplay muted loop>
+            <source
+              src="./assets/video/faire-descendre-les-abeilles.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video.
+          </video>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <!-- END OF KNOWMORE -->
+
+    <section class="features">
+      <div class="container">
+        <ul>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span
+              >Conçu par des <strong>apiculteurs</strong> pour les
+              apiculteurs</span
+            >
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span><strong>Sécurité</strong> par temporisation</span>
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span>Composants industriels <strong>fiables</strong></span>
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span
+              ><strong>Robustesse</strong> : supporte les chutes répétées dans
+              l'herbe</span
+            >
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span
+              >Plusieurs <strong>milliers d'heures</strong> de fonctionnement ou
+              d'activations</span
+            >
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span>Ne se <strong>perce pas</strong></span>
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span><strong>Autonomie</strong> de plusieurs semaines</span>
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span>S'allume <strong>sans effort</strong> ni échec</span>
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span
+              ><strong>Ergonomie</strong> : plus léger qu'un enfumoir à
+              soufflet, pas de pompage sur le soufflet</span
+            >
+          </li>
+          <li>
+            <i class="bx bx-check-square"></i
+            ><span><strong>Garantie 2 ans</strong></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- END OF FEATURES -->
+
+    <section id="demo">
+      <h2>Dans Quel Magasin Souhaiteriez-vous Avoir Une Démonstration ?</h2>
+      <p>
+        Renseignez-les informations ci-dessous et nous vous recontacterons pour
+        planifier avec vous une démonstration.
+      </p>
+
+      <div class="container">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Saississez le nom et la ville du magasin</legend>
+            <div class="form__group">
+              <label for="shop">Nom du Magasin</label>
+              <input
+                type="text"
+                name="Nom du Magasin"
+                placeholder="Saississez le nom du magasin"
+                id="shop"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="city">Nom de la Ville</label>
+              <input
+                type="text"
+                name="Nom de la ville"
+                placeholder="Saississez le nom de la ville"
+                id="city"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="post_code">Code postal</label>
+              <input
+                type="text"
+                name="Code postal"
+                placeholder="Saississez le code postal"
+                id="post_code"
+                required
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>A quelle date souhaitriez vous que la démonstration ait lieu ?</legend>
+            <div class="form__group">
+              <label for="date">Date de la démonstration</label>
+              <input
+                type="date"
+                name="Date"
+                placeholder="Saississez la date souhaitée"
+                id="date"
+                required
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Comment pouvons nous vous joindre ?</legend>
+            <div class="form__group">
+              <label for="last_name">Nom</label>
+              <input
+                type="text"
+                name="Nom"
+                placeholder="Saississez votre nom"
+                id="last_name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="first_name">Prénom</label>
+              <input
+                type="text"
+                name="Prénom"
+                placeholder="Saississez votre prénom"
+                id="first_name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="email">Adresse e-mail</label>
+              <input
+                type="email"
+                name="Email"
+                placeholder="Saississez votre adresse e-mail"
+                id="email"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="phone">Numéro de téléphone</label>
+              <input
+                type="tel"
+                name="Numéro de téléphone"
+                placeholder="Saississez votre numéro de téléphone (optionnel)"
+                id="phone"
+              />
+            </div>
+            <div class="form__group_checkbox">
+              <input
+              type="checkbox"
+              name="Politique de confidentialité"
+              id="confidentiality"
+              required
+              />
+              <label for="confidentiality">J'ai pris note de la <a href="">politique de confidentialité</a></label>
+            </div>
+          </fieldset>
+          <input type="submit" value="Envoyer la demande" class="btn-primary" />
+        </form>
+      </div>
+    </section>
+    <!-- END OF DEMO -->
+    <footer>
+      <div class="container">
+        <article>
+          <h5>NumericBees</h5>
+          <p>
+            56 rue du Dauphiné<br>
+            69007, Lyon, France
+          </p>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <small>+1232456789</small>
+          </div>
+          <div>
+            <i class="bx bx-mail-send"></i>
+            <small>support@numericbees.com</small>
+          </div>
+        </article>
+        <article>
+          <h5>Support</h5>
+          <a href="#">Conditions générales de vente</a>
+          <a href="#">Mentions Légales</a>
+          <a href="#">Contact</a>
+        </article>
+      </div>
+      <div class="copyright">
+        Copyright NumericBees. Tous droits réservés.
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--  PROJECT JS -->
+    <script src="./js/main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
