@@ -187,7 +187,7 @@ nav .container button {
 .hero .hero-bg-image {
   background: blue;
   height: 30%;
-  background: linear-gradient(rgba(4, 1, 18, 0.21), rgba(4, 1, 18, 0.21)), url(/assets/img/hero-background.jpg);
+  background: linear-gradient(rgba(4, 1, 18, 0.21), rgba(4, 1, 18, 0.21)), url(./../../assets/img/hero-background.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
