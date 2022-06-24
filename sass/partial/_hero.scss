@@ -1,10 +1,10 @@
 .hero {
   margin-top: 5rem;
-  height: calc(100vh - 5rem);
+  // height: calc(100vh - 5rem);
 
   .hero-bg-image {
     background: blue;
-    height: 30%;
+    height: calc(30vh - 5rem);
     background: linear-gradient(rgba(4, 1, 18, 0.21), rgba(4, 1, 18, 0.21)),
       url(./../assets/img/hero-background.jpg);
     background-size: cover;
@@ -28,7 +28,7 @@
     }
   }
   .container {
-    height: 70%;
+    height: 70vh;
     display: grid;
     place-items: center;
     padding: 2rem 0;

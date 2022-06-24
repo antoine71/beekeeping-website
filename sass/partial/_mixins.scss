@@ -1,5 +1,7 @@
 @mixin button($textColor: $white-color, $backgroundColor: $primary-color) {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   width: fit-content;
   padding: 0.75rem 1rem;
   border-radius: 0.4rem;

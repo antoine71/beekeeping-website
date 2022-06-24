@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beekeeping-website</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- BOXICONS CDN  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html" class="nav__logo">
+          <h3>NumericBees</h3>
+        </a>
+        <ul id="nav__items">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#buy">Acheter</a></li>
+          <li><a href="index.html#demo">Démonstration</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="#" class="cart">
+            <span class="cart-quantity">1</span>
+            <span class="icon"><i class="bx bx-cart"></i></span>
+          </a>
+          <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+          <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAV -->
+
+    <section class="hero">
+      <div class="hero-bg-image">
+        <div class="hero-text">
+          <h1>NumericBees</h1>
+          <h2>L'Apiculture Simplifiée</h2>
+        </div>
+      </div>
+    </section>
+    <!-- END OF HERO -->
+
+    <section class="cart">
+      <h2>Récapitulatif de la commande</h2>
+      <p>Voici le contenu de votre panier</p>
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Produit</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Quantité</th>
+              <th scope="col">Sous-total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="remove">
+                  <a href="#"><i class="bx bx-x"></i></a>
+              </th>
+              <td class="product">
+                <div>
+                  <img
+                    src="./assets/img/zephyr-1-automatic-bee-smoker.jpg"
+                    alt="Zephyr 1 enfumoir automatique"
+                  />
+                  <p>Zephyr 1 Pro</p>
+                </div>
+              </td>
+              <td>100 EUR</td>
+              <td class="quantity">
+                <div>
+                  <a href="#" class="btn-primary"
+                    ><i class="bx bxs-minus-circle"></i
+                  ></a>
+                  <span>1</span>
+                  <a href="#" class="btn-primary"
+                    ><i class="bx bxs-plus-circle"></i
+                  ></a>
+                </div>
+              </td>
+              <td><strong>100 EUR</strong></td>
+            </tr>
+            <tr>
+              <th scope="row" class="remove">
+                  <a href="#"><i class="bx bx-x"></i></a>
+              </th>
+              <td class="product">
+                <div>
+                  <img
+                    src="./assets/img/zephyr-1-automatic-bee-smoker.jpg"
+                    alt="Zephyr 1 enfumoir automatique"
+                  />
+                  <p>Zephyr 1 Pro</p>
+                </div>
+              </td>
+              <td>100 EUR</td>
+              <td class="quantity">
+                <div>
+                  <a href="#" class="btn-primary"
+                    ><i class="bx bxs-minus-circle"></i
+                  ></a>
+                  <span>1</span>
+                  <a href="#" class="btn-primary"
+                    ><i class="bx bxs-plus-circle"></i
+                  ></a>
+                </div>
+              </td>
+              <td><strong>100 EUR</strong></td>
+            </tr>
+ 
+
+          </tbody>
+        </table>
+        <div class="cart-summary">
+          <article>
+            <h3>Total Panier</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Sous-Total</td>
+                  <td>185 EUR</td>
+                </tr>
+                <tr>
+                  <td>Frais de livraison</td>
+                  <td>5 EUR</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>190 EUR</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#" class="btn-primary">Valider la commande</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <article>
+          <h5>NumericBees</h5>
+          <p>
+            56 rue du Dauphiné<br />
+            69007, Lyon, France
+          </p>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <small>+1232456789</small>
+          </div>
+          <div>
+            <i class="bx bx-mail-send"></i>
+            <small>support@numericbees.com</small>
+          </div>
+        </article>
+        <article>
+          <h5>Support</h5>
+          <a href="#">Conditions générales de vente</a>
+          <a href="#">Mentions Légales</a>
+          <a href="#">Contact</a>
+        </article>
+      </div>
+      <div class="copyright">Copyright NumericBees. Tous droits réservés.</div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--  PROJECT JS -->
+    <script src="./js/main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
