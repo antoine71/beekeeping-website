@@ -210,10 +210,10 @@ nav .container .buttons button {
     display: none;
   }
 }
-.hero {
+section.hero {
   margin-top: 5rem;
 }
-.hero .hero-bg-image {
+section.hero .hero-bg-image {
   background: blue;
   height: calc(30vh - 5rem);
   background: linear-gradient(rgba(4, 1, 18, 0.21), rgba(4, 1, 18, 0.21)), url(./../assets/img/hero-background.jpg);
@@ -225,59 +225,63 @@ nav .container .buttons button {
   display: grid;
   place-items: center;
 }
-.hero .hero-bg-image .hero-text h1 {
+section.hero .hero-bg-image .hero-text h1 {
   font-family: "Kanit", serif;
   font-weight: 700;
   font-style: italic;
   font-size: 4rem;
 }
-.hero .hero-bg-image .hero-text h2 {
+section.hero .hero-bg-image .hero-text h2 {
   font-family: "Kanit", serif;
   font-weight: 600;
   font-style: italic;
   font-size: 3rem;
 }
-.hero .container {
+
+section.highlight {
+  margin-top: 0;
+}
+section.highlight .container {
   height: 70vh;
   display: grid;
   place-items: center;
   padding: 2rem 0;
 }
-.hero .container .hero-content {
+section.highlight .container .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   max-width: 1024px;
 }
-.hero .container .hero-content .left {
+section.highlight .container .hero-content .left {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 0 5%;
   max-width: 28rem;
 }
-.hero .container .hero-content .left h1 {
+section.highlight .container .hero-content .left h1 {
   font-size: 2.6rem;
 }
-.hero .container .hero-content .left h2 {
+section.highlight .container .hero-content .left h2 {
   font-size: 1.8rem;
 }
-.hero .container .hero-content .left .check {
+section.highlight .container .hero-content .left .check {
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 1.2rem;
 }
-.hero .container .hero-content .left .buttons {
+section.highlight .container .hero-content .left .buttons {
   display: flex;
   gap: 1.6rem;
 }
-.hero .container .hero-content .left .buttons a {
+section.highlight .container .hero-content .left .buttons a {
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
-.hero .container .hero-content .right {
+section.highlight .container .hero-content .right {
   display: grid;
   place-items: center;
   padding: 0 5%;
@@ -285,11 +289,11 @@ nav .container .buttons button {
 
 /* ================== MEDIA QUERIES (SMALL SCREENS) ======================= */
 @media screen and (max-width: 600px) {
-  .hero .container .hero-content {
+  section.highlight .container .hero-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .hero .container .hero-content .left {
+  section.highlight .container .hero-content .left {
     text-align: center;
     align-items: center;
   }

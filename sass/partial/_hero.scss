@@ -1,4 +1,4 @@
-.hero {
+section.hero {
   margin-top: 5rem;
   // height: calc(100vh - 5rem);
 
@@ -27,6 +27,9 @@
       }
     }
   }
+}
+section.highlight {
+  margin-top: 0;
   .container {
     height: 70vh;
     display: grid;
@@ -83,7 +86,7 @@
 
 /* ================== MEDIA QUERIES (SMALL SCREENS) ======================= */
 @media screen and (max-width: 600px) {
-  .hero {
+  section.highlight {
     .container {
       .hero-content {
         grid-template-columns: 1fr;
