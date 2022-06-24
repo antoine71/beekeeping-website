@@ -30,8 +30,14 @@
           <li><a href="#">Articles</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
-        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+        <div class="buttons">
+          <a href="#" class="cart">
+            <span class="cart-quantity">1</span>
+            <span class="icon"><i class='bx bx-cart'></i></span>
+          </a>
+          <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+          <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+        </div>
       </div>
     </nav>
     <!-- END OF NAV -->
@@ -161,6 +167,75 @@
       </div>
     </section>
     <!-- END OF FEATURES -->
+    <section id="buy">
+      <h2>Commandez Votre Zephyr 1</h2>
+      <p>Livraison en France Métropolitaine</p>
+      <div class="container">
+        <article>
+          <h3>Zephyr 1 Pro</h3>
+          <h4>Enfumoir Automatique Zephyr 1 Pro</h4>
+          <table>
+            <tbody>
+              <tr>
+                <td>PrixHT</td>
+                <td>80 EUR</td>
+              </tr>
+              <tr>
+                <td>TVA</td>
+                <td>20 EUR</td>
+              </tr>
+              <tr>
+                <td>PrixTTC</td>
+                <td>100 EUR</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="product-image">
+            <img src="./assets/img/zephyr-1-automatic-bee-smoker.jpg" alt="Enfumoir automatique Zephyr 1 Pro">
+          </div>
+          <div class="add-to-cart">
+            <a href="#" class="btn-primary">
+              <i class='bx bx-cart-add' ></i>
+              <span>Ajouter au panier</span>
+            </a>
+          </div>
+          <a href="#" class="basket-link">Voir le Panier</a>
+        </article>
+        <article>
+          <h3>Zephyr 1 Amateur</h3>
+          <h4>Enfumoir Automatique Zephyr 1 Amateur</h4>
+          <table>
+            <tbody>
+              <tr>
+                <td>PrixHT</td>
+                <td>60 EUR</td>
+              </tr>
+              <tr>
+                <td>TVA</td>
+                <td>15 EUR</td>
+              </tr>
+              <tr>
+                <td>PrixTTC</td>
+                <td>85 EUR</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="product-image">
+            <img src="./assets/img/zephyr-1-automatic-bee-smoker.jpg" alt="Enfumoir automatique Zephyr 1 Pro">
+          </div>
+          <div class="add-to-cart">
+            <a href="#" class="btn-primary">
+              <i class='bx bx-cart-add' ></i>
+              <span>Ajouter au panier</span>
+            </a>
+          </div>
+          <a href="#" class="basket-link">Voir le Panier</a>
+        </article>
+       
+      </div>
+      
+    </section>
+
 
     <section id="demo">
       <h2>Dans Quel Magasin Souhaiteriez-vous Avoir Une Démonstration ?</h2>
@@ -205,7 +280,9 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend>A quelle date souhaitriez vous que la démonstration ait lieu ?</legend>
+            <legend>
+              A quelle date souhaitriez vous que la démonstration ait lieu ?
+            </legend>
             <div class="form__group">
               <label for="date">Date de la démonstration</label>
               <input
@@ -260,12 +337,15 @@
             </div>
             <div class="form__group_checkbox">
               <input
-              type="checkbox"
-              name="Politique de confidentialité"
-              id="confidentiality"
-              required
+                type="checkbox"
+                name="Politique de confidentialité"
+                id="confidentiality"
+                required
               />
-              <label for="confidentiality">J'ai pris note de la <a href="">politique de confidentialité</a></label>
+              <label for="confidentiality"
+                >J'ai pris note de la
+                <a href="">politique de confidentialité</a></label
+              >
             </div>
           </fieldset>
           <input type="submit" value="Envoyer la demande" class="btn-primary" />
@@ -278,7 +358,7 @@
         <article>
           <h5>NumericBees</h5>
           <p>
-            56 rue du Dauphiné<br>
+            56 rue du Dauphiné<br />
             69007, Lyon, France
           </p>
           <div>
@@ -297,9 +377,7 @@
           <a href="#">Contact</a>
         </article>
       </div>
-      <div class="copyright">
-        Copyright NumericBees. Tous droits réservés.
-      </div>
+      <div class="copyright">Copyright NumericBees. Tous droits réservés.</div>
     </footer>
 
     <!-- Swiper JS -->

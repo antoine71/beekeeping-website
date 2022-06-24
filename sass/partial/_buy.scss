@@ -1,0 +1,63 @@
+#buy {
+  .container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    article {
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      h3,
+      h4 {
+        text-align: center;
+      }
+
+      h4 {
+        font-weight: 400;
+      }
+
+      table {
+        tbody {
+          tr {
+            &:last-child {
+              font-weight: 600;
+            }
+            td {
+              &:last-child {
+                text-align: end;
+              }
+            }
+          }
+        }
+      }
+
+      .add-to-cart {
+        margin: auto;
+        .btn-primary {
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+        }
+      }
+
+      .basket-link {
+        text-align: center;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+/* ================== MEDIA QUERIES (SMALL SCREENS) ======================= */
+@media screen and (max-width: 600px) {
+  #buy {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
